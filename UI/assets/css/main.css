@@ -1,0 +1,269 @@
+img.bg-img{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+}
+
+div.login-content{
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	z-index: 99;
+	width: 80%;
+	height: 80%;
+	background-color: rgba(0, 0, 0, 0.7);
+	overflow: auto;
+}
+
+div.login-content div.info{
+	width: 75%;
+	height: 100%;
+	float: left;
+}
+
+div.login-content div.login{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+form.login-form{
+	padding: 30px;
+}
+
+form.login-form p{
+	font-size: 25px;
+	margin-bottom: 15px;
+	padding-bottom: 0px;
+	color: #ABEBC6;
+}
+
+div.form-wrap{
+	display: block;
+}
+
+div.form-wrap input#field{
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 15px 0px 15px 5px;
+	/*color: #F9E79F;*/
+	border-bottom: 1px solid #F9E79F;
+	width: 100%;
+}
+
+div.form-wrap input[type="checkbox"]{
+	margin-top: 15px;
+	border: none;
+	width: 20px;
+}
+
+div.form-wrap label{
+	color: #efefef;
+}
+
+div.form-wrap button{
+	width: 100%;
+	margin-top: 30px;
+	padding: 10px 5px 10px 5px;
+	border-radius: 5px;
+	border: none;
+	color: gray;
+	background-color: #ABEBC6;
+}
+
+div.form-wrap button a{
+	text-decoration: none;
+}
+
+div.form-wrap p{
+	font-size: 18px;
+}
+
+div.info .con{
+	padding: 50px;
+}
+
+div.info .title{
+	color: white;
+	text-transform: uppercase;
+}
+
+div.info .head1{
+	margin-top: 140px;
+	font-size: 25px;
+	margin-bottom: 15px;
+	padding-bottom: 0px;
+	color: #ABEBC6;
+}
+
+div.info .head2{
+	font-size: 50px;
+	color: #F9E79F;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+div.info button{
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	border: none;
+	color: gray;
+	background-color: #ABEBC6;
+}
+
+div.info button a{
+	text-decoration: none;
+}
+
+div.info p.terms{
+	color: silver;
+}
+
+img.ans-img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50%;
+	z-index: 9;
+}
+
+div.ans-content{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	background-color: #efefef;
+	z-index: 99;
+	width: 80%;
+	padding: 20px;
+	border: 1px solid silver;
+	margin-bottom: 30px;
+}
+
+div.question h1{
+	text-transform: uppercase;
+}
+
+div.question p.label label{
+	margin-right: 15px;
+}
+
+div.answers{
+	overflow: auto;
+	background-color: #FCF3CF;
+}
+
+div.answers a{
+	text-decoration: none;
+	color: black;
+}
+
+div.answers a:hover{
+	text-decoration: none;
+	color: #2980B9;
+}
+
+div.single-answer{
+	border-bottom: 1px solid silver;
+	padding: 15px;
+}
+
+div.single-answer div.photo{
+	overflow: auto;
+}
+div.single-answer div.photo img{
+	width: 50px;
+	float: left;
+}
+
+div.single-answer div.photo div.info{
+	float: left;
+}
+
+div.single-answer div.photo div.info ul{
+	list-style: none;
+	margin: 0px;
+	padding: 5px 10px;
+}
+
+div.post{
+	margin-top: 30px;
+	width: 100%;
+}
+
+div.post input{
+	width: 98.8%;
+	margin-bottom: 10px;
+	padding: 10px 5px;
+}
+
+div.post textarea{
+	width: 98%;
+	padding: 10px;
+	height: 150px;
+}
+
+div.post button{
+	margin-top: 10px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	border: none;
+	color: gray;
+	background-color: #ABEBC6;	
+}
+
+div.header{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .8);
+	z-index: 999;
+	padding: 10px 0px;
+}
+
+div.header ul{
+	list-style: none;
+}
+
+div.header ul li{
+	display: inline;
+	text-transform: uppercase;
+	margin-left: 95px;
+}
+
+div.header ul li input{
+	padding: 10px 5px;
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	width: 220px;
+	border: 1px solid #F9E79F;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin-right: 0px;
+}
+
+div.header ul li button, div.header ul li button a, div.header ul li button a:hover{
+	margin-top: 10px;
+	padding: 10px 5px 10px 5px;
+	border-radius: 5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border: none;
+	color: gray;
+	background-color: #ABEBC6;
+	margin-left: 0px;
+}
+
+div.header ul li a{
+	color: #ABEBC6;
+	text-decoration: none;
+}
+
+div.header ul li.logout-tag, div.header ul li.home-tag{
+	margin-left: 30px;
+}
