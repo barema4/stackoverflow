@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Answers</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script type="text/javascript">
+		function upvote(){
+			alert("You've upvoted an answer.");
+		}
+
+		function downvote(){
+			alert("You've downvoted an answer.");
+		}
+
+		function reject(){
+			alert("You've rejected an answer.");
+		}
+
+		function acceptPost(){
+			alert("You've accepted an answer.");
+		}
+	</script>
+</head>
+<body>
+	<img class="ans-img" src="assets/images/ans2.jpg">
+	
+	<div class="header">
+		<ul>
+			<li><a href="post.html">StackoverFlow-Lite</a></li>
+			<li>
+				<input type="text" name="search" placeholder="Search here ...">
+				<button><a href="search.html">GO</a></button>
+			</li>
+			<li class="home-tag"><a href="post.html">Questions</a></li>
+			<li class="logout-tag"><a href="most.html">Most Answered</a></li>
+			<li class="logout-tag"><a href="your.html">Your Questions</a></li>
+			<li class="logout-tag"><a href="index.html">logout</a></li>
+		</ul>
+	</div>
+	
+	<div class="ans-content">
+		<div class="question">
+			<h1>Answers To The Question</h1>
+			<p>
+				Chose among the answers below the one which solves your problem.
+			</p>
+			<p class="label">
+				<label><strong>Posted By : </strong> Rubalema Sam</label>
+				<label><strong>Posted At : </strong> 09-Aug-2018</label>
+				<label><strong>Answers : </strong> 3</label>
+			</p>
+		</div>
+
+		<div class="answers">
+			<div class="single-answer">
+				<div class="photo">
+					<img src="assets/images/avatar.jpg"> 
+					<div class="info">
+						<ul>
+							<li>Kalyango John</li>
+							<li>09-Aug-2018</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<p>
+						solution 1.
+					</p>
+					<p class="label">
+						<label><a href="#">3 Comment (s)</a></label> &nbsp;&nbsp;
+						<label onclick="acceptPost()"><a href="#">Accept</a></label> &nbsp;&nbsp;
+						<label onclick="reject()"><a href="#">Reject</a></label>&nbsp;&nbsp;
+						<label onclick="upvote()"><a href="#">Upvote</a></label> &nbsp;&nbsp;
+						<label onclick="downvote()"><a href="#">Downvote</a></label>
+					</p>
+				</div>
+			</div>
+
+			<div class="single-answer">
+				<div class="photo">
+					<img src="assets/images/avatar.jpg"> 
+					<div class="info">
+						<ul>
+							<li>Rubalema Sam</li>
+							<li>09-Aug-2018</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<p>
+						Solution 2.
+					</p>
+					<p class="label">
+						<label><a href="#">0 Comment (s)</a></label> &nbsp;&nbsp;
+						<label onclick="reject()"><a href="#">Reject</a></label>&nbsp;&nbsp;
+						<label onclick="acceptPost()"><a href="#">Accept</a></label> &nbsp;&nbsp;
+						<label onclick="upvote()"><a href="#">Upvote</a></label> &nbsp;&nbsp;
+						<label onclick="downvote()"><a href="#">Downvote</a></label>
+					</p>
+				</div>
+			</div>
+
+			<div class="single-answer">
+				<div class="photo">
+					<img src="assets/images/avatar.jpg"> 
+					<div class="info">
+						<ul>
+							<li>Masette Nicholas</li>
+							<li>09-Aug-2018</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<p>
+						Solution 3.
+					</p>
+					<p class="label">
+						<label><a href="#">5 Comment (s)</a></label> &nbsp;&nbsp;
+						<label onclick="acceptPost()"><a href="#">Accept</a></label> &nbsp;&nbsp;
+						<label onclick="reject()"><a href="#">Reject</a></label>&nbsp;&nbsp;
+						<label onclick="upvote()"><a href="#">Upvote</a></label> &nbsp;&nbsp;
+						<label onclick="downvote()"><a href="#">Downvote</a></label>
+					</p>
+				</div>
+			</div>	
+		</div>
+
+		<div class="post">
+			<h2>Post Answer</h2>
+			<form class="form-post-anwer">
+				<textarea placeholder="Please, post your answer here."></textarea>
+				<button>POST</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
