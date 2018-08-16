@@ -12,7 +12,5 @@ class Questions(MethodView):
 
     def get(self, id=None):
         
-        if id == None:
-            return jsonify({'question':[question for question in self.questions]})
         quest = [question for question in self.questions if question['id'] == id]
         return jsonify({'question' : quest[0]})
