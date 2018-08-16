@@ -1,7 +1,8 @@
+from spy import Questions
 
-from views import Questions
+
 class Urls:
-    
+
     @staticmethod
     def generate(app):
         """
@@ -9,6 +10,6 @@ class Urls:
         It takes no argument
         :param: app: takes in the app variable
         :return: urls
-        """       
-        app.add_url_rule('/api/v1/questions/<int:id>', view_func=Questions.as_view('h'), methods=['GET',])
-      
+        """
+        app.add_url_rule('/api/v1/questions', view_func=Questions.as_view('w'), methods=['POST',])
+        #app.add_url_rule('/api/v1/questions', view_func=Questions.as_view('k'), methods=['POST'])
