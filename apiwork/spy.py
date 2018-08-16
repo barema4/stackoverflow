@@ -5,24 +5,22 @@ from flask import jsonify
 
 
 class Questions(MethodView):
-    questions = [
-        {"user_name": "sam", "Description": "What is html", "id": 1},
-        {"user_name": "Derick", "Description": "what is data structure", "id": 2},
-        {"user_name": "jacob", "Description": "what is javascript", "id": 3},
+    Answers = [
+        {"user_name": "sam", "Description": "What is html", "answer": "","id": 1},
+        {"user_name": "Derick", "Description": "what is data structure", "answer": "", "id": 2},
+        {"user_name": "jacob", "Description": "what is javascript", "answer": "", "id": 3},
     ]
 
-    def post(self ):
+    def post(self, Id ):
         """
-        method for all post requests
+        method for all post answers
         """
         if not request.json:
             return jsonify({'error': "not a json request"}), 400
         else:
-            question = {'user_name': request.json['user_name'], 'Description': request.json['Description'],
+            Answer = {'user_name': request.json['user_name'], 'Description': request.json['Description'], 'answer': request.json['answer'],
                         'id': request.json['id']}
-            self.questions.append(question)
-            return jsonify({'questions': self.questions})
+            self.Answers.append(Answer)
+            return jsonify({'Answers': self.Answers})
 
-    #req = {'user_name': request.json['user_name'], 'Description': request.json['Description'], 'id': request.json['id']}
-    #self.questions.append(req)
-     #  return jsonify({'requests': self.questions}
+    #req,
