@@ -1,0 +1,7 @@
+[report]
+omit = 
+    */python?.?/*
+    */__pycache__/*
+    */venv/*
+    */home/travis/virtualenv/*
+    */mymodule/tests/*
