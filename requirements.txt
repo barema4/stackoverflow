@@ -23,3 +23,4 @@ smmap2==2.0.4
 typed-ast==1.1.0
 Werkzeug==0.14.1
 wrapt==1.10.11
+pytest-cov==2.5.1
