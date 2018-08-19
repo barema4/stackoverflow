@@ -31,7 +31,7 @@ class TestViews(unittest.TestCase):
     def test_post(self):
 
         result = self.client().post('api/v1/questions', content_type="application/json", data=json.dumps(
-            dict(id=2, Description="what is javascript", user_name="sarah",
+            dict(question_id=2, Description="what is javascript", user_name="sarah",
                  )))
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["questions"])
@@ -41,7 +41,7 @@ class TestViews(unittest.TestCase):
 
 
         result = self.client().post('/api/v1/questions/3/answers', content_type="application/json",
-                                    data=json.dumps(dict(id=4, user_name="Junior Sara", Description="what is javascript",answer="sawre")))
+                                    data=json.dumps(dict(question_id=4, user_name="Junior Sara", Description="what is javascript",answer="sawre")))
 
         self.assertAlmostEquals(result.status_code, 200)
         # self.assertIn("id", result.data)
