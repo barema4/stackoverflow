@@ -13,8 +13,8 @@ class Urls:
         :return: urls
         """
 
-        app.add_url_rule('/api/v1/questions/<int:id>', view_func=Questions.as_view('h'), methods=['GET', ])
+        app.add_url_rule('/api/v1/questions/<int:question_id>', view_func=Questions.as_view('h'), methods=['GET', ])
         app.add_url_rule('/api/v1/questions/', view_func=Questions.as_view('g'), methods=['GET', ])
         app.add_url_rule('/api/v1/questions', view_func=Questions.as_view('w'), methods=['POST', ])
-        app.add_url_rule('/api/v1/questions/<int:id>/answers', view_func= SpecificAnswer.as_view('ansewr'), methods=['POST', ])
+        app.add_url_rule('/api/v1/questions/<int:question_id>/answers', view_func= SpecificAnswer.as_view('answer'), methods=['POST', ])
 
