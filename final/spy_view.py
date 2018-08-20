@@ -16,10 +16,10 @@ class Questions(MethodView):
 
     def get(self, question_id=None):
         """
-        method for all get requests
+        method for get requests
         """
 
-        if 'question_id' == None:
+        if question_id == None:
             return jsonify({'question': [question for question in self.questions]})
         quest = [question for question in self.questions if question['question_id'] == question_id]
         return jsonify({'question': quest[0]})
@@ -36,7 +36,7 @@ class Questions(MethodView):
                         'Description': request.json['Description'],
                         'question_id': request.json['question_id']}
             self.questions.append(question)
-            return jsonify({'questions': self.questions}), 201
+            return jsonify({'questions': self.questions}), 200
 
 class SpecificAnswer(MethodView):
     """
