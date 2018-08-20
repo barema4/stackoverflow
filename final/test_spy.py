@@ -22,7 +22,7 @@ class TestViews(unittest.TestCase):
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["question"])
 
-    def test_get(self):
+    def test_answer(self):
         result = self.client().get('/api/v1/questions/2')
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["question"])
@@ -37,7 +37,7 @@ class TestViews(unittest.TestCase):
         self.assertTrue(result.json["questions"])
         self.assertIn('Description', str(result.data))
 
-    def test_post(self):
+    def test_one(self):
 
 
         result = self.client().post('/api/v1/questions/3/answers', content_type="application/json",
