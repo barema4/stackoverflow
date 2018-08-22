@@ -19,6 +19,10 @@
 		function acceptPost(){
 			alert("You've accepted an answer.");
 		}
+
+		function comments(){
+			window.prompt("Please, enter your comment below.", "comment")
+		}
 	</script>
 </head>
 <body>
@@ -33,7 +37,7 @@
 			</li>
 			<li class="home-tag"><a href="post.html">Questions</a></li>
 			<li class="logout-tag"><a href="most.html">Most Answered</a></li>
-			<li class="logout-tag"><a href="your.html">Your Questions</a></li>
+			<li class="logout-tag"><a href="your.html">Profile</a></li>
 			<li class="logout-tag"><a href="index.html">logout</a></li>
 		</ul>
 	</div>
@@ -67,7 +71,7 @@
 						solution 1.
 					</p>
 					<p class="label">
-						<label><a href="#">3 Comment (s)</a></label> &nbsp;&nbsp;
+						<label onclick="comments()"><a href="#">3 Comment (s)</a></label> &nbsp;&nbsp;
 						<label onclick="acceptPost()"><a href="#">Accept</a></label> &nbsp;&nbsp;
 						<label onclick="reject()"><a href="#">Reject</a></label>&nbsp;&nbsp;
 						<label onclick="upvote()"><a href="#">Upvote</a></label> &nbsp;&nbsp;
@@ -91,7 +95,7 @@
 						Solution 2.
 					</p>
 					<p class="label">
-						<label><a href="#">0 Comment (s)</a></label> &nbsp;&nbsp;
+						<label onclick="comments()"><a href="#">0 Comment (s)</a></label> &nbsp;&nbsp;
 						<label onclick="reject()"><a href="#">Reject</a></label>&nbsp;&nbsp;
 						<label onclick="acceptPost()"><a href="#">Accept</a></label> &nbsp;&nbsp;
 						<label onclick="upvote()"><a href="#">Upvote</a></label> &nbsp;&nbsp;
@@ -115,7 +119,7 @@
 						Solution 3.
 					</p>
 					<p class="label">
-						<label><a href="#">5 Comment (s)</a></label> &nbsp;&nbsp;
+						<label onclick="comments()"><a href="#">5 Comment (s)</a></label> &nbsp;&nbsp;
 						<label onclick="acceptPost()"><a href="#">Accept</a></label> &nbsp;&nbsp;
 						<label onclick="reject()"><a href="#">Reject</a></label>&nbsp;&nbsp;
 						<label onclick="upvote()"><a href="#">Upvote</a></label> &nbsp;&nbsp;
