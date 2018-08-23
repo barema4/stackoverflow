@@ -4,4 +4,4 @@ omit =
     */__pycache__/*
     */venv/*
     */home/travis/virtualenv/*
-    */mymodule/tests/*
+    */stack/app/api/v1/test_view.py/*
