@@ -8,4 +8,13 @@ Questions and Answers
 [![Coverage Status](https://coveralls.io/repos/github/barema4/stackoverflow/badge.svg?branch=Api_final)](https://coveralls.io/github/barema4/stackoverflow?branch=Api_final)
 
 Link to heroku app:
-https://dashboard.heroku.com/apps/final-apiapp
+https://final-apiapp.herokuapp.com/
+
+- Now you can access the system api Endpoints:
+
+|Verb       | End Point                                             |Use                                     
+| -------   |-----------------------------------------------      |------------------------------------------|
+|  GET      |  /api/v1/questions/                                 |Gets a list of all questions              |
+|  GET      | /api/v1/questions/<question_id>/                    |Gets a specific question and the answers  |
+|  POST     |/api/v1/questions/                                   |Posting a question                        |
+|  POST     |/api/v1/questions/<question_id>/answers/             |Posts answer to a specific question       |
